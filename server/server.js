@@ -9,9 +9,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //ROUTES
-
+app.use('/api/list', listRouter);
 
 //LISTEN REQUEST FOR PORT
 app.listen(PORT, () => {
     console.log('listening on: ', PORT);
 });
+
