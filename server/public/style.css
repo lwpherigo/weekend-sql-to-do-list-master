@@ -1,0 +1,34 @@
+header {
+    font-size: 30px;
+    background: DimGray;
+}
+
+body {
+    margin: 20px;
+    background: rgb(62, 62, 240);
+}
+
+input {
+    width: 30%;
+    padding: 5px;
+}
+
+.addItem {
+    background: rgb(230, 157, 157);
+    padding: 5px;
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+td {
+    background: rgb(190, 133, 186);
+    padding: 5px;
+}
+
+.completed {
+    background: rgb(100, 216, 100);
+}

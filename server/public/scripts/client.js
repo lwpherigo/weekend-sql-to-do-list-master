@@ -49,7 +49,10 @@ function getList() {
 }
 
 function completeBtn() {
+    $('#js-new-item').addClass('completed');
+
     let id = $(this).data('id');
+    
     let val = true;
     let turnGreen = $(this).data('trans');
 
@@ -103,7 +106,7 @@ function render(response) {
         const listItem = response[i]; 
         $('.js-list').append(`
             <tr>
-            <td>${listItem.task}</td>
+            <td id="js-new-item">${listItem.task}</td>
             <td><button class='js-btn-complete' data-trans="${listItem.task}" data-id="${listItem.id}">Complete!</button></td>
             <td><button class='js-btn-delete' data-trans="${listItem.task}" data-id="${listItem.id}">Delete!</button></td>
             </tr>
